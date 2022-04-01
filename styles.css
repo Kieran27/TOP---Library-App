@@ -1,0 +1,70 @@
+
+:root {
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+
+  --white-text: #fff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.header {
+  padding: 0.7rem 0;
+  background: green;
+  width: 100%;
+}
+
+.title-block {
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 10px 0;
+max-width: 1350px;
+margin: 0 auto;
+color: white;
+}
+
+.form-block {
+  margin: 0 auto;
+  max-width: 600px;
+  display: flex;
+}
+
+.book-grid {
+  margin: 0 auto;
+  max-width: 1300px;
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(120px, 1fr) );
+
+}
+
+.book-container {
+  max-width: 300px;
+}
+
+article img  {
+  width: 100%;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.create-form-button {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 1rem;
+}
+
+.create-form {
+  padding: 1rem 2rem;
+  font-size: 3rem;
+  background: black;
+  color: var(--white-text);
+  border-radius: 50%;
+}
