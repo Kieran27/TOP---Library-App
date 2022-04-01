@@ -40,22 +40,22 @@ document.getElementById('myLibrary').addEventListener('submit', (e) => {
 
 });
 
-// Book Constructor
+// Book Class
 
-function Book (title, author, pages, readStatus) {
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.readStatus = readStatus;
-}
+class Book {
+  constructor(title, author, pages, readStatus) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.readStatus = readStatus;
+  }
 
-// Book-Constructor-Prototype
-
-Book.prototype.changeReadState = function() {
-  if (this.readStatus === true) {
-    return this.readStatus = false;
-  } else {
-    return this.readStatus = true;
+  changeReadState() {
+    if (this.readStatus === true) {
+      return this.readStatus = false;
+    } else {
+      return this.readStatus = true;
+    }
   }
 }
 
